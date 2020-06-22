@@ -15,7 +15,7 @@ void loop() {
     command = Serial.read();
   }
    
-  if(command == 'F') {
+  if(command == '1') {
     //spin left motor clockwise
     digitalWrite(9,HIGH);
     digitalWrite(10,LOW);
@@ -24,7 +24,7 @@ void loop() {
     digitalWrite(12,LOW);
   }
    
-  else if(command == 'B') {
+  else if(command == '2') {
     //spin left motor counterclockwise
     digitalWrite(9, LOW);
     digitalWrite(10, HIGH);
@@ -33,7 +33,7 @@ void loop() {
     digitalWrite(12, HIGH);
   }
    
-  else if(command == 'R') {
+  else if(command == '3') {
     //spin right motor clockwise
     digitalWrite(9, LOW);
     digitalWrite(10, HIGH);
@@ -42,7 +42,7 @@ void loop() {
     digitalWrite(12, LOW);
   }
    
-  else if(command == 'L') {
+  else if(command == '4') {
     //spin left motor clockwise
     digitalWrite(9, HIGH);
     digitalWrite(10, LOW);
@@ -51,7 +51,7 @@ void loop() {
     digitalWrite(12, HIGH);
   }
    
-  else if(command == 'S') {
+  else if(command == '5') {
     //stop left motor
     digitalWrite(9, LOW);
     digitalWrite(10, LOW);
